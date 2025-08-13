@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chandra Narayan Chaudhary — Portfolio</title>
+  <meta name="description" content="Portfolio of Chandra Narayan Chaudhary — BCA (Bachelor of Computer Applications) Student, Web & Java Developer based in Kathmandu." />
+  <meta name="author" content="Chandra Narayan Chaudhary" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chandra Narayan Chaudhary — Portfolio" />
+  <meta property="og:description" content="BCA (Bachelor of Computer Applications) 6th Semester Student • Web, Java & Mobile Developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/cover.png" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero"><span>Chandra Narayan Chaudhary</span><b></b></a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="section hero">
+      <div class="container grid-2">
+        <div class="hero-copy">
+          <h1 class="reveal-up">Chandra Narayan Chaudhary</h1>
+          <p class="subtitle reveal-up delay-1">BCA (Bachelor of Computer Applications) 6th Semester Student • Web, Java & Mobile Developer</p>
+          <p class="descr reveal-up delay-2">
+            Dedicated and motivated BCA (Bachelor of Computer Applications) student with strong foundations in web development (HTML, CSS, JS, PHP) and Java. Passionate about building real products and learning continuously.
+          </p>
+          <div class="cta-group reveal-up delay-3">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Hire Me</a>
+          </div>
+          <ul class="meta reveal-up delay-4">
+            <li>📍 Lainchaur, Kathmandu, Nepal</li>
+            <li>📞 +977-9827787964</li>
+            <li>✉️ tharuketochandu@gmail.com</li>
+          </ul>
+          <div class="social reveal-up delay-5">
+            <a href="https://github.com/chandrabca" aria-label="GitHub">GitHub</a>
+            <a href="www.linkedin.com/in/tharu-keto-chandu-0a8635348" aria-label="LinkedIn">LinkedIn</a>
+            <a href="mailto:tharuketochandu@gmail.com" aria-label="Email">Email</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal-up delay-2">
+          <img src="assets/profile.JPG" alt="Profile illustration" class="floating" />
+          <div class="blur-ball ball-1"></div>
+          <div class="blur-ball ball-2"></div>
+        </div>
+      </div>
+      <!-- <div class="scroll-indicator">Scroll</div> -->
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2 class="section-title reveal-up">About</h2>
+        <p class="reveal-up delay-1">
+          As a final-year BCA (Bachelor of Computer Applications) student, I specialize in developing complete software solutions including Web Applications, Android Apps, and Distributed Systems. Skilled in PHP, Java, and Android development, I am passionate about solving real-world problems with clean, maintainable code.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal-up">Skills</h2>
+        <div class="chips reveal-grid">
+          <span class="chip">HTML • CSS • JavaScript • Bootstrap</span>
+          <span class="chip">PHP (API Development & Integration)</span>
+          <span class="chip">Core Java (OOP, Collections, Exceptions)</span>
+          <span class="chip">Servlets, JDBC & JSP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Git • VS Code • IntelliJ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal-up">Projects</h2>
+        <div class="cards reveal-grid">
+          <article class="card">
+            <img src="assets/project1.jpg" alt="Online Electronic Shop" />
+            <div class="card-body">
+              <h3>Online Electronic Shop</h3>
+              <p>Web platform for browsing and purchasing electronic products using HTML, CSS, JS, and PHP.</p>
+              <div class="tags">
+                <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <a class="card-link" href="https://github.com/chandrabca/online-electronic-shop" target="_blank" rel="noreferrer">View</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/project2.jpg" alt="Laundry Management System" />
+            <div class="card-body">
+              <h3>Laundry Management System (LMS)</h3>
+              <p>End-to-end laundry pickup & delivery with roles (Admin/Customer), routing, and secure data handling.</p>
+              <div class="tags">
+                <span>PHP</span><span>MySQL</span><span>Leaflet / Maps</span><span>Payments</span>
+              </div>
+              <a class="card-link" href="https://github.com/chandrabca/online-electronic-shop" target="_blank" rel="noreferrer">View</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/project3.png" alt="Android Contacts App" />
+            <div class="card-body">
+              <h3>Android Contacts App</h3>
+              <p>SQLite-backed app with RecyclerView, search, and CRUD operations.</p>
+              <div class="tags">
+                <span>Android</span><span>SQLite</span><span>Java</span>
+              </div>
+              <a class="card-link" href="https://github.com/chandrabca/online-electronic-shop" target="_blank" rel="noreferrer">View</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section alt">
+      <div class="container narrow">
+        <h2 class="section-title reveal-up">Education</h2>
+        <ul class="timeline reveal-up">
+          <li><b>BCA (Bachelor of Computer Applications)</b>, National College, Kathmandu — <i>Feb 2021 – Present</i></li>
+          <li><b>+2 (Management)</b>, National School of Sciences — Kathmandu</li>
+          <li><b>SEE</b>, Sharda Namuna Academy, Lahan-1, Siraha</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="section-title reveal-up">Contact</h2>
+        <form id="contactForm" class="form reveal-up" onsubmit="return false;">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn primary" id="sendBtn">Send</button>
+          <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+          <!-- <p class="hint">To enable email delivery, add your <b>EmailJS</b> keys in <code>script.js</code> (instructions in README).</p> -->
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- <p>© <span id="year"></span> Chandra Narayan Chaudhary</p> -->
+      <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+</body>
+</html>
