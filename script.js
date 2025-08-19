@@ -25,23 +25,58 @@ function initializeLibraries() {
     console.error("[v0] EmailJS library not loaded")
   }
 
-  // Initialize Lucide icons
-  if (typeof window.lucide !== "undefined" && window.lucide.createIcons) {
-    lucide = window.lucide
-    lucide.createIcons()
-    console.log("[v0] Lucide icons initialized successfully")
-  } else {
-    setTimeout(() => {
-      if (typeof window.lucide !== "undefined" && window.lucide.createIcons) {
-        lucide = window.lucide
-        lucide.createIcons()
-        console.log("[v0] Lucide icons initialized successfully (retry)")
-      } else {
-        console.error("[v0] Lucide library not loaded after retry")
-        addSocialLinkFallbacks()
+  initializeLucideIcons()
+}
+
+function initializeLucideIcons() {
+  let retryCount = 0
+  const maxRetries = 5
+
+  function tryInitializeLucide() {
+    // Try different ways to access Lucide
+    const lucideLib = window.lucide || window.Lucide || (window.lucideIcons && window.lucideIcons.createIcons)
+
+    if (lucideLib && typeof lucideLib.createIcons === "function") {
+      try {
+        lucideLib.createIcons()
+        console.log("[v0] Lucide icons initialized successfully")
+        return true
+      } catch (error) {
+        console.error("[v0] Error creating Lucide icons:", error)
       }
-    }, 500)
+    }
+
+    // If that didn't work, try the global createIcons function
+    if (typeof window.createIcons === "function") {
+      try {
+        window.createIcons()
+        console.log("[v0] Lucide icons initialized via global createIcons")
+        return true
+      } catch (error) {
+        console.error("[v0] Error with global createIcons:", error)
+      }
+    }
+
+    return false
   }
+
+  function retryInitialization() {
+    if (tryInitializeLucide()) {
+      return // Success!
+    }
+
+    retryCount++
+    if (retryCount < maxRetries) {
+      console.log(`[v0] Retrying Lucide initialization (${retryCount}/${maxRetries})`)
+      setTimeout(retryInitialization, 200 * retryCount) // Increasing delay
+    } else {
+      console.error("[v0] Failed to initialize Lucide icons after all retries")
+      addSocialLinkFallbacks()
+    }
+  }
+
+  // Start the initialization process
+  retryInitialization()
 }
 
 function addSocialLinkFallbacks() {
