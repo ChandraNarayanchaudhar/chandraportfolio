@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Narayan Chaudhary — Portfolio</title>
+    <meta name="description" content="Portfolio of Chandra Narayan Chaudhary — BCA (Bachelor of Computer Applications) Student, Web & Java Developer based in Kathmandu.">
+    <meta name="keywords" content="portfolio, web developer, java developer, BCA student, Kathmandu">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chandra Narayan Chaudhary — Portfolio">
+    <meta property="og:description" content="BCA (Bachelor of Computer Applications) 6th Semester Student • Web, Java & Mobile Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/cover.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#hero" class="logo">Chandra Narayan Chaudhary</a>
+                
+                <nav class="nav-desktop">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#skills" class="nav-link-mobile">Skills</a>
+                <a href="#projects" class="nav-link-mobile">Projects</a>
+                <a href="#education" class="nav-link-mobile">Education</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title animate-fade-in">Chandra Narayan Chaudhary</h1>
+                        <p class="hero-subtitle animate-fade-in-delay-1">BCA (Bachelor of Computer Applications) 6th Semester Student • Web, Java & Mobile Developer</p>
+                        <p class="hero-description animate-fade-in-delay-2">Dedicated and motivated BCA (Bachelor of Computer Applications) student with strong foundations in web development (HTML, CSS, JS, PHP) and Java. Passionate about building real products and learning continuously.</p>
+                        
+                        <div class="hero-buttons animate-fade-in-delay-3">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                        </div>
+                        
+                        <div class="hero-contact animate-fade-in-delay-4">
+                            <p>📍 Lainchaur, Kathmandu, Nepal</p>
+                            <p>📞 +977-9827787964</p>
+                            <p>✉️ tharuketochandu@gmail.com</p>
+                        </div>
+                        
+                        <div class="hero-social animate-fade-in-delay-5">
+                            <a href="https://github.com/chandrabca" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tharu-keto-chandu-0a8635348" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:tharuketochandu@gmail.com" class="social-link">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image animate-fade-in-delay-2">
+                        <div class="profile-container">
+                            <img src="./images/profile.jpg" alt="Chandra Narayan Chaudhary" class="profile-image floating">
+                            <div class="bg-blob bg-blob-1"></div>
+                            <div class="bg-blob bg-blob-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-content">
+                    <h2 class="section-title">About</h2>
+                    <p class="about-text">As a final-year BCA (Bachelor of Computer Applications) student, I specialize in developing complete software solutions including Web Applications, Android Apps, and Distributed Systems. Skilled in PHP, Java, and Android development, I am passionate about solving real-world problems with clean, maintainable code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML • CSS • JavaScript • Bootstrap</span>
+                    <span class="skill-tag">PHP (API Development & Integration)</span>
+                    <span class="skill-tag">Core Java (OOP, Collections, Exceptions)</span>
+                    <span class="skill-tag">Servlets, JDBC & JSP</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Git • VS Code • IntelliJ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/project1.jpg" alt="Online Electronic Shop">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Online Electronic Shop</h3>
+                            <p class="project-description">Web platform for browsing and purchasing electronic products using HTML, CSS, JS, and PHP.</p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <a href="https://github.com/chandrabca/online-electronic-shop" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/project2.jpg" alt="Laundry Management System">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Laundry Management System (LMS)</h3>
+                            <p class="project-description">End-to-end laundry pickup & delivery with roles (Admin/Customer), routing, and secure data handling.</p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Leaflet / Maps</span>
+                                <span class="tag">Payments</span>
+                            </div>
+                            <a href="https://github.com/chandrabca/online-electronic-shop" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./images/project3.png" alt="Android Contacts App">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Android Contacts App</h3>
+                            <p class="project-description">SQLite-backed app with RecyclerView, search, and CRUD operations.</p>
+                            <div class="project-tags">
+                                <span class="tag">Android</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Java</span>
+                            </div>
+                            <a href="https://github.com/chandrabca/online-electronic-shop" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View Project <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <h3 class="education-degree">BCA (Bachelor of Computer Applications)</h3>
+                        <p class="education-details">National College, Kathmandu — <em>Feb 2021 – Present</em></p>
+                    </div>
+                    <div class="education-item">
+                        <h3 class="education-degree">+2 (Management)</h3>
+                        <p class="education-details">National School of Sciences — <em>Kathmandu</em></p>
+                    </div>
+                    <div class="education-item">
+                        <h3 class="education-degree">SEE</h3>
+                        <p class="education-details">Sharda Namuna Academy — <em>Lahan-1, Siraha</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-input form-textarea" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        Send Message
+                    </button>
+                    
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i data-lucide="arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
